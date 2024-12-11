@@ -17,13 +17,12 @@ function UserLanding() {
         <div className="text-lg text-reseda_green">
             <h1>Welcome, {dummyData.name}</h1>
             <h2>Your Houses:</h2>
-            <ul>
+            <div className="flex flex-wrap">
                 {dummyData.houses.map(house => (
-                    <li key={house}>
-                        <HouseCard {...{ name: house, image: undefined }} />
-                    </li>
+                    <HouseCard {...{ name: house, image: undefined }} />
                 ))}
-            </ul>
+                <HouseCard name="Add House" image={undefined} />
+            </div>
         </div>
     )
 
