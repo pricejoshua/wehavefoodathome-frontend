@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import HouseCard from '../components/HouseCard'
+import EmptyHouseCard from '../components/EmptyHouseCard'
 
 const dummyData = {
     name: 'John Doe',
@@ -21,7 +22,7 @@ function UserLanding() {
                 {dummyData.houses.map(house => (
                     <HouseCard {...{ name: house, image: undefined }} />
                 ))}
-                <HouseCard name="Add House" image={undefined} />
+                <EmptyHouseCard />
             </div>
         </div>
     )
