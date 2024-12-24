@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import UserLanding from './pages/UserLanding'
 import UploadReciept from './pages/UploadReciept'
+import Login from './pages/Login'
 import { supabase } from './utils/supabase'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/main" element={<UserLanding />} />
         <Route path="/upload" element={<UploadReciept />} />
 
