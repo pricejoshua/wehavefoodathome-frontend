@@ -15,7 +15,7 @@ function UserLanding() {
 
 
     return (
-        <div className="text-lg text-reseda_green">
+        <div className="text-lg text-pakistan_green">
             <h1>Welcome, {dummyData.name}</h1>
             <h2>Your Houses:</h2>
             <div className="flex flex-wrap">
